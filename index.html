@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Standered Browser Restricted</title>
+	<!--Additional elements for browsers and robots go here goes here-->
+  <!-- Main -C-ascading -S-tyle-S-heet -->
+  <style>
+  .notParent {
+  font-size: 14px;
+  padding: 5px;
+  background-color: #00ffaa;
+  color: #ffffff;
+  border-radius: 20px;
+  }
+  body {
+  color: #ffffff
+  background: rgb(130,174,205);
+  background: -moz-radial-gradient(circle, rgba(130,174,205,1) 0%, rgba(45,52,231,1) 100%);
+  background: -webkit-radial-gradient(circle, rgba(130,174,205,1) 0%, rgba(45,52,231,1) 100%);
+  background: radial-gradient(circle, rgba(130,174,205,1) 0%, rgba(45,52,231,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#82aecd",endColorstr="#2d34e7",GradientType=1);
+  }
+  </style>
+</head>
+<body>
+	<!--The Page Body -->
+  <br>
+  <div class="header">
+  <h1>Uh Oh!</h1>
+  <h2>Looks like child security is enabled!</h2>
+  </div>
+  <h2>If your a parent, use your code</h2>
+  <form id="login">
+  <label for="password">Passcode: </label>
+  <input id="password" placeholder="EX:12345">
+  <p>Passcode is the passcode you set in the parent settings</p>
+  <a href="recover.html">Lost Passcode? Click Here!</a>
+  <input type="submit" value="Continue as parent >>>">
+  <hr>
+  <p>Safesearch is <span id="enabled" class="enabled"></span></p>
+  <input id="notParent" onclick="return()" class="notParent" value="Continue as child >>>">
+  <a href="https://www.google.com/search?q=what+is+safesearch">What is SafeSearch?</a>
+  </form>
+</body>
+
+</html>
